@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /* styles.css */
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f4f4f9;
+            }
+
+            .item-list {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 90%;
+                max-width: 840px;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+            .item-list h1 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            #list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .item:last-child {
+                border-bottom: none;
+            }
+
+            .item [type='checkbox'] {
+                width: 18px;
+                height: 18px;
+                margin-right: 20px;
+            }
+
+            .item-image {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+
+            .item-name {
+                font-size: 15px;
+                letter-spacing: -0.05em;
+                flex: 2;
+            }
+
+            .item-price {
+                font-size: 0.9em;
+                flex: 0 0 120px;
+                text-align: center;
+            }
+
+            .item-remaind {
+                font-size: 0.7em;
+                flex: 0 0 80px;
+                text-align: center;
+                color: #999999;
+            }
+            .item-count {
+                flex: 0 0 130px;
+                text-align: center;
+            }
+
+            .numberInput {
+                width: 50px;
+                text-align: center;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 5px;
+                font-size: 0.9em;
+                flex: 0 0 70px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .item-add {
+                background-color: green;
+                border: none;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .item-add:hover {
+                background-color: #06fd48;
+            }
+
+            .decrease,
+            .increase {
+                width: 30px;
+            }
+            .count-text {
+                width: 40px;
+                text-align: center;
+            }
+
+            .bottom_txt {
+                margin-top: 40px;
+            }
+            #result {
+                font-size: 24px;
+                color: #346aff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="item-list">
+            <h1>Shopping Cart List</h1>
+            <ul id="list">
+                <!-- <li class="item">
+          <img src="image/pants.jpg" alt="Item Image" class="item-image" />
+          <span class="item-name">Item 1</span>
+          <span class="item-price">$10.00</span>
+          <input type="number" class="numberInput" />
+          <button class="item-add">장바구니</button>
+        </li> -->
+
+                <!-- 추가 항목을 여기에 추가할 수 있습니다 -->
+            </ul>
+            <p class="bottom_txt">합계 : <span id="result"></span> <span class="won">원</span></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
